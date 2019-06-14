@@ -10,9 +10,6 @@ const app = dialogflow({
 });
 
 
-app.intent('Default Welcome Intent', (conv) => {
-    conv.ask("HI tell me a dish name");
-});
 
 app.intent("recipe", conv => {
     conv.user.storage.dish = {};
